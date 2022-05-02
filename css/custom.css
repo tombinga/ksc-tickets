@@ -1,0 +1,158 @@
+.page-hero {
+  display: none;
+}
+
+/* flex */
+/* TESTING */
+.ticket-listing-inner .col-sm-12,
+.ticket-listing-inner .col-xs-12,
+.ticket-listing-inner .col-sm-4,
+.ticket-listing-inner .col-xs-4,
+.ticket-listing-inner .col-sm-3 {
+  width: auto;
+}
+/* flex */
+.ticket-listing-inner {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.col-ticket-pass {
+  display: flex;
+  /* padding: 2%; */
+  /*     flex-grow: 1; */
+  flex-basis: 29%;
+  /* flex-wrap: wrap; */
+  border: 1px solid #b7b4b4;
+  background: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  overflow: hidden;
+  /* so child elements can use flexbox stuff too! */
+}
+@media screen and (max-width: 767px) {
+  .col-ticket-pass {
+    width: 100% !important;
+    flex-basis: auto;
+    padding: 5%;
+  }
+}
+
+.col-ticket-img {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.col-ticket-img img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+}
+.ticket-listing-inner .offers-features {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+  background-color: #ededed;
+  text-align: center;
+}
+.ticket-listing-inner .offers-features .modal-window-list {
+  /*     width: 100%; */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 0 !important;
+}
+.ticket-listing-inner
+  .offers-features
+  .modal-window-list
+  .offers-features-button {
+  /*     flex-basis: 50%; */
+  /*     flex-grow: 1; */
+  /*     background: #d2d2d2; */
+  padding: 20px;
+}
+.ticket-listing-inner
+  .offers-features
+  .modal-window-list
+  .offers-features-button
+  .offers-features-icon {
+  display: none !important;
+}
+.col-ticket-pass > .col-sm-12 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+}
+
+.pass-label {
+  width: 100%;
+}
+/* .small-blue-button-with-arrow {
+ 
+    margin-top: auto!important;
+} */
+
+.col-ticket-pass .col-sm-12 > h2 {
+  font-family: GothamBlack;
+  font-size: 24px !important;
+  margin-top: 2em;
+}
+/* .pass-prices + .col-sm-12 {
+    margin-top: auto;
+} */
+
+.pass-details {
+  padding: 0 25px !important;
+}
+
+.pass-prices {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding: 20px 0 !important;
+}
+/* .pass-prices,
+.pass-prices + .col-sm-12 {
+    margin-top: 2em;
+} */
+
+.offers-features {
+  text-align: center;
+}
+.col-category {
+  display: block;
+  font-family: GothamBlack;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  color: #454545;
+}
+.col-age-group {
+  font-family: GothamMedium;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+}
+.pass-price {
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 10px;
+}
+.tab-content-container
+  .tab-content
+  .ticket-listing-container
+  .ticket-listing-inner
+  .useful-information {
+  width: 100%;
+}
